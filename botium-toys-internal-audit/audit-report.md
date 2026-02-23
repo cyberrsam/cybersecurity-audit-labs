@@ -1,32 +1,110 @@
 # Botium Toys – Internal IT Audit Report
 
-## Scenario Overview
+## 1. Scope and Goals
 
-Botium Toys is a fictional U.S.-based toy company operating from a single physical location that serves as a storefront, warehouse, and main office. As the company’s online presence has expanded to international markets, including the European Union (EU), the IT department is under increasing pressure to maintain secure and compliant systems.
+### Scope
+The scope of this audit covers the entire security program at Botium Toys, including:
 
-The IT manager initiated an internal audit using the NIST Cybersecurity Framework (CSF) to:
+- On-premises infrastructure
+- Employee equipment and end-user devices
+- Internal network
+- E-commerce and payment systems
+- Data storage and retention
+- Legacy systems
+- Physical security controls
 
-- Evaluate the current security posture
-- Identify risks, threats, and vulnerabilities
-- Assess compliance with PCI-DSS (payment processing)
-- Assess compliance with GDPR (EU data protection requirements)
-- Recommend remediation actions
+### Goals
+- Assess existing assets
+- Evaluate current security controls
+- Identify compliance gaps
+- Complete controls and compliance checklist
+- Recommend improvements to strengthen security posture
 
-## Audit Objectives
-- Assess security posture
-- Identify risks to critical assets
-- Evaluate PCI-DSS and GDPR compliance
-- Provide prioritized recommendations
+## 2. Current Assets
 
-## Framework Used
-- NIST Cybersecurity Framework (Identify, Protect, Detect, Respond, Recover)
+Assets managed by the IT department include:
 
-## Summary of Findings
-- Lack of Multi-Factor Authentication (MFA)
-- Weak password controls
-- Limited monitoring and logging
-- No formal incident response plan
-- GDPR compliance gaps
+- On-premises business systems
+- Employee devices (desktops, laptops, smartphones, remote workstations)
+- Warehouse inventory systems
+- E-commerce platform
+- Accounting and database systems
+- Internal network and internet connectivity
+- Legacy systems
+- Physical storefront security infrastructure
 
-## Overall Risk Posture
-Moderate to High risk due to authentication weaknesses and compliance exposure.
+## 3. Risk Assessment Summary
+
+### Overall Risk Score: 8/10 (High)
+
+Botium Toys currently faces a high risk exposure due to:
+
+- Inadequate asset management
+- Weak access control implementation
+- Lack of encryption for cardholder data
+- No intrusion detection system (IDS)
+- No disaster recovery plan or data backups
+- Non-compliance with best practices for least privilege and separation of duties
+
+## 4. Control Evaluation
+
+### Access Control
+- All employees currently have broad access to internally stored data.
+- Least privilege and separation of duties are NOT implemented.
+- Password policy exists but is weak and not centrally enforced.
+- No centralised password management system.
+
+Risk Level: High
+
+### Data Protection
+- Credit card data is NOT encrypted at rest.
+- This creates major PCI-DSS compliance exposure.
+
+Risk Level: Critical
+
+### Network Security
+- Firewall is properly configured.
+- Antivirus software installed and monitored.
+- No Intrusion Detection System (IDS) implemented.
+
+Risk Level: Medium-High
+
+### Business Continuity
+- No disaster recovery plan.
+- No data backups.
+- Legacy systems are monitored but not on a scheduled basis.
+
+Risk Level: Critical
+
+### Compliance & Privacy
+- 72-hour EU breach notification process exists.
+- Privacy policies documented and enforced.
+
+Risk Level: Moderate (Good foundation but incomplete controls)
+
+## 5. Recommendations
+
+Immediate:
+- Implement encryption for cardholder data (PCI-DSS compliance)
+- Enforce least privilege access controls
+- Deploy a centralised password management system
+- Establish a regular backup schedule
+- Develop and test a disaster recovery plan
+
+Short-Term:
+- Deploy Intrusion Detection System (IDS)
+- Implement asset inventory and classification process
+- Establish formal legacy system maintenance schedule
+
+Long-Term:
+- Conduct formal compliance audit (PCI-DSS & GDPR)
+- Implement role-based access control (RBAC)
+- Perform regular vulnerability assessments
+
+## 6. Conclusion
+
+Botium Toys currently maintains some foundational controls (firewall, antivirus, physical security), but lacks critical security controls required to protect sensitive customer data and maintain regulatory compliance.
+
+Without immediate remediation, the organisation faces significant risk of data breach, regulatory fines, and operational disruption.
+
+This audit demonstrates the importance of structured governance and alignment with the NIST Cybersecurity Framework (CSF).
