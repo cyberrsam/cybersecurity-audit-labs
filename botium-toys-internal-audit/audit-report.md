@@ -72,12 +72,12 @@ Risk Level: Medium-High
 ### Business Continuity
 - No disaster recovery plan.
 - No data backups.
-- Legacy systems are monitored but not on a scheduled basis.
+- Legacy systems are monitored, but not on a scheduled basis.
 
 Risk Level: Critical
 
 ### Compliance & Privacy
-- 72-hour EU breach notification process exists.
+- A 72-hour EU breach notification process exists.
 - Privacy policies documented and enforced.
 
 Risk Level: Moderate (Good foundation but incomplete controls)
@@ -94,7 +94,7 @@ Immediate:
 Short-Term:
 - Deploy Intrusion Detection System (IDS)
 - Implement asset inventory and classification process
-- Establish formal legacy system maintenance schedule
+- Establish a formal legacy system maintenance schedule
 
 Long-Term:
 - Conduct formal compliance audit (PCI-DSS & GDPR)
