@@ -82,6 +82,47 @@ Risk Level: Critical
 
 Risk Level: Moderate (Good foundation but incomplete controls)
 
+## 4.1 Control Status Summary (Yes/No)
+
+Access Control
+- Least Privilege Implemented – No
+- Separation of Duties – No
+- Password Policy Exists – Yes
+- Password Policy Strong & Enforced – No
+- Centralised Password Management – No
+
+Data Protection
+- Encryption of Cardholder Data – No
+
+Network Security
+- Firewall Implemented – Yes
+- Antivirus Installed – Yes
+- Intrusion Detection System (IDS) – No
+
+Business Continuity
+- Disaster Recovery Plan – No
+- Data Backups – No
+- Scheduled Legacy System Maintenance – No
+
+Physical Security
+- Physical Locks – Yes
+- CCTV Surveillance – Yes
+- Fire Detection Systems – Yes
+
+## 4.2 Compliance Best Practices Status
+
+PCI-DSS
+- Cardholder Data Encryption – No
+- Restricted Access to Cardholder Data – No
+- Monitoring & Detection Controls – Partial
+- Firewall Protection – Yes
+
+GDPR
+- 72-Hour Breach Notification Process – Yes
+- Privacy Policies Documented – Yes
+- Data Access Restrictions – No
+- Data Protection Controls Adequate – No
+
 ## 5. Recommendations
 
 Immediate:
